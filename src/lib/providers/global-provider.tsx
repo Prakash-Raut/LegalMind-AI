@@ -1,6 +1,4 @@
-import { AppSidebar } from "@/components/app-sidebar";
 import { ThemeProvider } from "@/components/theme-provider";
-import { SidebarProvider } from "@/components/ui/sidebar";
 import { Toaster } from "@/components/ui/sonner";
 import type { ChildrenProps } from "@/types";
 
@@ -12,13 +10,8 @@ const GlobalProvider = ({ children }: ChildrenProps) => {
 			enableSystem
 			disableTransitionOnChange
 		>
-			<SidebarProvider>
-				<div className="flex min-h-screen w-full">
-					<AppSidebar />
-					<main className="flex-1">{children}</main>
-				</div>
-				<Toaster />
-			</SidebarProvider>
+			{children}
+			<Toaster />
 		</ThemeProvider>
 	);
 };
