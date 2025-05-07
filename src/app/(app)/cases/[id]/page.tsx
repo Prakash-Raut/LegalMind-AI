@@ -1,8 +1,8 @@
-import { CaseDetails } from "@/components/cases/case-details";
-import { CaseDocuments } from "@/components/cases/case-documents";
-import { CaseHeader } from "@/components/cases/case-header";
-import { CaseNotes } from "@/components/cases/case-notes";
-import { CaseTimeline } from "@/components/cases/case-timeline";
+import { CaseDetails } from "../case-details";
+import { CaseDocuments } from "../case-documents";
+import { CaseHeader } from "../case-header";
+import { CaseNotes } from "../case-notes";
+import { CaseTimeline } from "../case-timeline";
 
 type CaseDetailPageProps = {
 	params: Promise<{ id: string }>;

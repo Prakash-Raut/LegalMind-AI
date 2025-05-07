@@ -1,6 +1,6 @@
-import { OrganizationSettings } from "@/components/profile/organization-settings";
-import { ProfileForm } from "@/components/profile/profile-form";
-import { ProfileHeader } from "@/components/profile/profile-header";
+import { OrganizationSettings } from "./organization-settings";
+import { ProfileForm } from "./profile-form";
+import { ProfileHeader } from "./profile-header";
 
 export default function ProfilePage() {
 	return (

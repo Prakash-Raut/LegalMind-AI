@@ -1,5 +1,5 @@
-import { SettingsHeader } from "@/components/settings/settings-header";
-import { SettingsTabs } from "@/components/settings/settings-tabs";
+import { SettingsHeader } from "./settings-header";
+import { SettingsTabs } from "./settings-tabs";
 
 export default function SettingsPage() {
 	return (

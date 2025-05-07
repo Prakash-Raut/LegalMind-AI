@@ -1,6 +1,6 @@
-import { SignupForm } from "@/components/auth/signup-form";
 import { LegalScales } from "@/components/icons/legal-scales";
 import Link from "next/link";
+import { SignupForm } from "./signup-form";
 
 export default function SignupPage() {
 	return (

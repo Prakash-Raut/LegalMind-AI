@@ -1,6 +1,6 @@
-import { LoginForm } from "@/components/auth/login-form";
 import { LegalScales } from "@/components/icons/legal-scales";
 import Link from "next/link";
+import { LoginForm } from "./login-form";
 
 export default function LoginPage() {
 	return (

@@ -1,6 +1,6 @@
-import { PricingFAQ } from "@/components/pricing/pricing-faq";
-import { PricingHeader } from "@/components/pricing/pricing-header";
-import { PricingPlans } from "@/components/pricing/pricing-plans";
+import { PricingFAQ } from "./pricing-faq";
+import { PricingHeader } from "./pricing-header";
+import { PricingPlans } from "./pricing-plans";
 
 export default function PricingPage() {
 	return (

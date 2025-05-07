@@ -1,7 +1,7 @@
-import { CasesList } from "@/components/dashboard/cases-list";
-import { DashboardHeader } from "@/components/dashboard/dashboard-header";
-import { DashboardMetrics } from "@/components/dashboard/dashboard-metrics";
-import { RecentActivity } from "@/components/dashboard/recent-activity";
+import { CasesList } from "./cases-list";
+import { DashboardHeader } from "./dashboard-header";
+import { DashboardMetrics } from "./dashboard-metrics";
+import { RecentActivity } from "./recent-activity";
 
 export default function DashboardPage() {
 	return (

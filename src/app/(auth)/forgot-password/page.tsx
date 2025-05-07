@@ -1,6 +1,6 @@
-import { ForgotPasswordForm } from "@/components/auth/forgot-password-form";
 import { LegalScales } from "@/components/icons/legal-scales";
 import Link from "next/link";
+import { ForgotPasswordForm } from "./forgot-password-form";
 
 export default function ForgotPasswordPage() {
 	return (

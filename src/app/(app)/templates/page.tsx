@@ -1,5 +1,5 @@
-import { TemplatesGrid } from "@/components/templates/templates-grid";
-import { TemplatesHeader } from "@/components/templates/templates-header";
+import { TemplatesGrid } from "./templates-grid";
+import { TemplatesHeader } from "./templates-header";
 
 export default function TemplatesPage() {
 	return (

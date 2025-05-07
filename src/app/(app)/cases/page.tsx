@@ -1,5 +1,5 @@
-import { CasesGrid } from "@/components/cases/cases-grid";
-import { CasesHeader } from "@/components/cases/cases-header";
+import { CasesGrid } from "./cases-grid";
+import { CasesHeader } from "./cases-header";
 
 export default function CasesPage() {
 	return (

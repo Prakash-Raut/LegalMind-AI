@@ -1,5 +1,5 @@
-import { AIChat } from "@/components/ai/ai-chat";
-import { AIHeader } from "@/components/ai/ai-header";
+import { AIChat } from "./ai-chat";
+import { AIHeader } from "./ai-header";
 
 export default function AIAssistantPage() {
 	return (
