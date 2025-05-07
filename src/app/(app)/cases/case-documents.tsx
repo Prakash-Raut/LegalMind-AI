@@ -12,8 +12,9 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Download, Eye, FileText, FileUp, MoreHorizontal } from "lucide-react";
+import { Download, Eye, FileText, MoreHorizontal } from "lucide-react";
 import Link from "next/link";
+import { DocumentUploadModal } from "./document-upload-modal";
 
 // Sample data - would be fetched based on ID in a real app
 const documents = [
@@ -61,10 +62,7 @@ export function CaseDocuments({ id }: { id: string }) {
 						{documents.length} documents attached to this case
 					</CardDescription>
 				</div>
-				<Button size="sm">
-					<FileUp className="mr-2 h-4 w-4" />
-					Upload
-				</Button>
+				<DocumentUploadModal />
 			</CardHeader>
 			<CardContent>
 				<div className="space-y-2">

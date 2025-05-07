@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { PlusCircle } from "lucide-react";
+import { NewCaseButton } from "../cases/new-case-button";
 
 export function DashboardHeader() {
 	return (
@@ -8,10 +7,7 @@ export function DashboardHeader() {
 				<h1 className="text-2xl font-bold tracking-tight">Dashboard</h1>
 				<p className="text-muted-foreground">Welcome back, Advocate Sharma</p>
 			</div>
-			<Button>
-				<PlusCircle className="mr-2 h-4 w-4" />
-				New Case
-			</Button>
+			<NewCaseButton />
 		</div>
 	);
 }

@@ -13,6 +13,7 @@ import {
 	SidebarMenuButton,
 	SidebarMenuItem,
 	SidebarTrigger,
+	useSidebar,
 } from "@/components/ui/sidebar";
 import {
 	BarChart3,
@@ -31,6 +32,7 @@ import { usePathname } from "next/navigation";
 
 export function AppSidebar() {
 	const pathname = usePathname();
+	const { state } = useSidebar();
 
 	const menuItems = [
 		{
@@ -89,10 +91,13 @@ export function AppSidebar() {
 	];
 
 	return (
-		<Sidebar>
+		<Sidebar collapsible="icon">
 			<SidebarHeader className="flex items-center gap-2 px-4 py-2">
-				<LegalScales className="h-6 w-6" />
-				<span className="text-lg font-bold">LegalMind AI</span>
+				{state === "expanded" && <LegalScales className="h-6 w-6" />}
+				{state === "expanded" && (
+					<span className="text-lg font-bold">LegalMind AI</span>
+				)}
+				{state === "collapsed" && <LegalScales className="h-6 w-6 mx-auto" />}
 				<div className="ml-auto">
 					<SidebarTrigger />
 				</div>
